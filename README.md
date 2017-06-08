@@ -7,6 +7,7 @@ I used two independent PID controllers to control the steering and the speed of 
 
 ### Steering PID Controller
 ![alt text](./img/PIDSteeringEqn.gif "PID Steering Equation")
+
 Where:
 - **K<sub>p</sub> = 0.16** : forces the vehicle to quickly steer as soon as cte differs from zero. If it is two high with respect of the other parameters, the vehicle begins to oscillate from side to side of the road.
 - **K<sub>i</sub> = 0.0002** : ensures that the error between the selected steering angle and the real angle applied is compensated over time.
@@ -14,6 +15,7 @@ Where:
 
 ### Speed PID Controller
 ![alt text](./img/SpeedErrorEqn.gif "Speed Error Equation")
+
 ![alt text](./img/PIDSpeedEqn.gif "PID Speed Equation")
 
 - **speed<sub>target</sub> = 80 mph**
